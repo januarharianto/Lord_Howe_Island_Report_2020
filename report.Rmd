@@ -1,0 +1,47 @@
+---
+title: "Data Quality Checks for LHI Logbook"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+# Summary
+
+- This report is based on the file `Logbook_DAT_update2018.mdb`.
+- Since the file is and Access database, the easiest way to import the data into R would be to export the tables as excel files.
+
+
+
+# Setup and definitions
+
+## Packages
+
+These packages should be installed.
+
+```{r, message=FALSE}
+library(tidyverse) # data wrangling, and better plots
+library(readxl) # to read excel files
+```
+
+# Data checks
+
+Let's import the data first:
+
+```{r}
+fishing <- read_excel("data/Fishing_Activity.xlsx")
+catch <- read_excel("data/Catch.xlsx")
+```
+
+
+
+```{r}
+```
+
+
+
+## Table: Fishing Activity
+
+
+
+## Table: Catch
